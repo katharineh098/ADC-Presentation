@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analog-to-Digital Converter (ADC)</title>
+
+    <!-- Reveal.js CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/black.min.css">
+
+    <!-- Highlight.js for syntax highlighting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/monokai.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <!-- Title Slide -->
+            <section>
+                <h1>Analog-to-Digital Converter (ADC)</h1>
+                <p>Understanding ADC Basics</p>
+                <p><small>By Meihui Huang</small></p>
+            </section>
+
+            <!-- Horizontal Navigation Example -->
+            <section>
+                <section>
+                    <h2>What is an ADC?</h2>
+                    <p>Converts an analog signal into a digital representation.</p>
+                </section>
+                <section>
+                    <h2>ADC Process</h2>
+                    <ol>
+                        <li class="fragment">Sampling</li>
+                        <li class="fragment">Quantization</li>
+                        <li class="fragment">Encoding</li>
+                    </ol>
+                </section>
+            </section>
+
+            <!-- Vertical Navigation Example -->
+            <section>
+                <section>
+                    <h2>Types of ADC</h2>
+                </section>
+                <section>
+                    <h3>Flash ADC</h3>
+                    <p class="fragment">Fast but expensive</p>
+                </section>
+                <section>
+                    <h3>Successive Approximation ADC</h3>
+                    <p class="fragment">Efficient and commonly used</p>
+                </section>
+                <section>
+                    <h3>Sigma-Delta ADC</h3>
+                    <p class="fragment">High resolution, used in audio applications</p>
+                </section>
+            </section>
+
+            <!-- Internal Linking -->
+            <section>
+                <h2>Understanding Sampling</h2>
+                <p>Click <a href="#/sampling-theorem">here</a> for more on the Sampling Theorem.</p>
+            </section>
+
+            <section id="sampling-theorem">
+                <h2>Sampling Theorem</h2>
+                <p>"To reconstruct a signal, the sampling rate must be at least twice the highest frequency component."</p>
+            </section>
+
+            <!-- LaTeX Formula -->
+            <section>
+                <h2>Nyquist-Shannon Theorem</h2>
+                <p>\[
+                f_s \geq 2 f_{max}
+                \]</p>
+            </section>
+
+            <!-- Embedded SVG -->
+            <section>
+                <h2>ADC Block Diagram</h2>
+                <object data="https://upload.wikimedia.org/wikipedia/commons/5/5a/ADConverter.svg" type="image/svg+xml" width="600"></object>
+            </section>
+
+            <!-- Embedded iFrame -->
+            <section>
+                <h2>ADC Simulation</h2>
+                <iframe src="https://www.falstad.com/circuit/circuitjs.html" width="800" height="500"></iframe>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- Reveal.js Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/math/math.min.js"></script>
+
+    <script>
+        Reveal.initialize({
+            transition: 'slide', // Transition effect
+            plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX ]
+        });
+    </script>
+
+</body>
+</html>
+

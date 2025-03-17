@@ -1,0 +1,61 @@
+/* Custom Background */
+.reveal {
+    background: linear-gradient(135deg, #1e1e2e, #3a3a5e);
+    color: white;
+}
+
+/* Custom Fonts */
+.reveal h1, .reveal h2, .reveal h3 {
+    font-family: "Optima",sans-serif;
+    text-transform: uppercase;
+}
+
+/* Slide Backgrounds */
+.reveal .slide-background {
+    background-size: cover;
+}
+
+/* Custom Colors for Titles */
+.reveal h1 {
+    color: #ff9900;
+}
+
+.reveal h2 {
+    color: #ff9900;
+}
+
+/* Style for Fragmented Lists */
+.reveal .fragment {
+    opacity: 0.5;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.reveal .fragment.visible {
+    opacity: 1;
+}
+
+/* Custom Bullet Points */
+.reveal ul {
+    list-style-type: square;
+}
+
+/* Code Block Styling */
+.reveal pre {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Add a Shadow to Images */
+.reveal img {
+    border-radius: 10px;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Custom Slide Backgrounds */
+.reveal section.custom-slide {
+    background: url('https://source.unsplash.com/random/1600x900') no-repeat center center;
+    background-size: cover;
+    color: white;
+}
+
