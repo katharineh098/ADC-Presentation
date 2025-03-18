@@ -28,17 +28,65 @@
             <section>
                 <section>
                     <h2>What is an ADC?</h2>
-                    <p>Converts an analog signal into a digital representation.</p>
+                    <p>A system that converts an analog signal into a digital signal.</p>
                 </section>
                 <section>
-                    <h2>ADC Process</h2>
+                    <h2>Where are ADCs used?</h2>
+                    <ol>
+                        <li class="fragment">Microcontrollers</li>
+                        <li class="fragment">Audio Processing</li>
+                        <li class="fragment">Sensors</li>
+			<li class="fragment">...</li>
+                    </ol>
+		    <p class="fragment">Any application where it is necessary to convert analog signals into digital form.</p>
+                </section>
+            </section>
+
+	    <section>
+		<section>
+    	       	    <h2>ADC Process</h2>
                     <ol>
                         <li class="fragment">Sampling</li>
                         <li class="fragment">Quantization</li>
                         <li class="fragment">Encoding</li>
                     </ol>
                 </section>
-            </section>
+	        <section>
+		    <h3>Sampling</h3>
+		    <p>a technique used to capture continuous phenomena, whereby periodic snapshots are taken</p>
+		    <p style="font-size: 0.8em; font-style: italic;"> Click <a href="#/sampling-theorem">here</a> for more on the Sampling Theorem.</p>
+		    <h4 style="text-align: left;">Sampling Rate</h4>
+		    <p>how often an ADC takes samples of the continuous analog</p>
+		</section>
+                <!-- Internal Linking -->
+                <section id="sampling-theorem">
+                    <h2>Sampling Theorem</h2>
+                    <p>"To reconstruct a signal, the sampling rate must be at least twice the highest frequency component."</p>
+                </section>
+                    <!-- LaTeX Formula -->
+                    <section>
+                       <h2>Nyquist-Shannon Theorem</h2>
+                       <p>\[
+                       f_s \geq 2 f_{max}
+                       \]</p>
+                    </section>
+		<section>
+		    <h3>Quantization</h3>
+		    <p>the process of mapping continuous infinite values to a smaller set of decrete finite values</p>
+		    <h4 style="text-align: left;">Quantization Error</h4>
+		    <p>the difference between an analog signal's actual value and its nearest representable ADC value</p>
+		</section>
+		<section>
+		    <h3>Encoding</h3>
+		    <p>the process of representing the digital output of the ADC as a binary number</p>
+		    <h4 style="text-align: left;">Resolution</h4>
+		    <p>the number of distinct digital values that can be used to represent the input signal</p>
+		</section>
+		<section>
+		    <h3>A description of how the sequence was sampled and encoded is also needed.</h3>
+		</section>
+	    </section>
+
 
             <!-- Vertical Navigation Example -->
             <section>
@@ -59,29 +107,13 @@
                 </section>
             </section>
 
-            <!-- Internal Linking -->
-            <section>
-                <h2>Understanding Sampling</h2>
-                <p>Click <a href="#/sampling-theorem">here</a> for more on the Sampling Theorem.</p>
-            </section>
-
-            <section id="sampling-theorem">
-                <h2>Sampling Theorem</h2>
-                <p>"To reconstruct a signal, the sampling rate must be at least twice the highest frequency component."</p>
-            </section>
-
-            <!-- LaTeX Formula -->
-            <section>
-                <h2>Nyquist-Shannon Theorem</h2>
-                <p>\[
-                f_s \geq 2 f_{max}
-                \]</p>
-            </section>
 
             <!-- Embedded SVG -->
             <section>
                 <h2>ADC Block Diagram</h2>
-                <object data="https://upload.wikimedia.org/wikipedia/commons/5/5a/ADConverter.svg" type="image/svg+xml" width="600"></object>
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEh5_TXQOzr0YhTpG6E4HuLndqZsw7LCSutxqBqbfczMitUQzfUGBPu2PqBms2rmQN824qSrS9wD1IofUkjOGC7NjlzTNn6D-QKcMfyK0XCXO58i5zCKJRXfHLzCu43QmC35jA7LJ8hFITfUKOIUa2EPm1lLtX240LS5I8dn7eIapDSAOCUqZgi2VxYI=s16000" 
+                     alt="ADC Block Diagram" 
+                     style="max-width: 80%; height: auto;">
             </section>
 
             <!-- Embedded iFrame -->
@@ -89,6 +121,14 @@
                 <h2>ADC Simulation</h2>
                 <iframe src="https://www.falstad.com/circuit/circuitjs.html" width="800" height="500"></iframe>
             </section>
+
+	    <section>
+		<h2>Applications of ADCs</h2>
+	    </section>
+
+	    <section>
+		<h2>Recaption</h2>
+	    </section>
 
         </div>
     </div>
