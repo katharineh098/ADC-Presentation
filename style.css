@@ -15,6 +15,10 @@
     background-size: cover;
 }
 
+.reveal section[data-background="#f3e5f5"] h2 {
+    color: #FF9900 !important;
+}
+
 /* Custom Colors for Titles */
 .reveal h1 {
     color: #ff9900;

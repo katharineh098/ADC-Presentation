@@ -12,6 +12,13 @@
     <!-- Highlight.js for syntax highlighting -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/monokai.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+        .no-bullets {
+            list-style: none;
+	    padding-left: 0; 
+	    color: #ff9900;
+        }
+    </style>
 </head>
 <body>
     <div class="reveal">
@@ -96,15 +103,28 @@
                 <section>
                     <h3>Flash ADC</h3>
                     <p class="fragment">Fast but expensive</p>
+		    <p class="fragment">Can convert very high frequencies of input signals</p>
+		    <p class="fragment">Consume more power than other ADCs and they are limited to low resolutions, typically up to 8 bits</p>
                 </section>
                 <section>
                     <h3>Successive Approximation ADC</h3>
                     <p class="fragment">Efficient and commonly used</p>
+		    <p class="fragment">Dominate the medium to high-resolution ADC market</p>
+		    <p class="fragment">Sampling rates of up to 25Msps and resolutions ranging from 8 to 18 bits</p>
                 </section>
                 <section>
                     <h3>Sigma-Delta ADC</h3>
                     <p class="fragment">High resolution, used in audio applications</p>
+		    <p class="fragment">A closed-loop oversampling technique</p>
+		    <p class="fragment">Designed to sample a slowly varying input signal multiple times, a process known as oversampling.</p>
+		    <p class="fragment">Δ: the difference between the incoming analog signal and the DAC output</p>
+		    <p class="fragment">Σ: the accumulation of this error over time</p>
                 </section>
+		<section>
+		    <h3>Pipeline ADC</h3>
+		    <p class="fragment">High-speed and efficient, used in video and RF applications</p>
+		    <p class="fragment">Dividing the conversion process into multiple stages, each of which contributes a portion of the final digital output. </p>
+		</section>
             </section>
 
 
@@ -116,25 +136,25 @@
                          alt="ADC Block Diagram" 
                          style="max-width: 80%; height: auto;">
                 </section>
-	        <section>
+	        <section data-background="#f3e5f5">
 		    <h2>Flash ADC</h2>
 		        <img src="images/flash_adc.png"
 		             alt="Flash ADC Block Diagram"
 		             style="max-width: 50%; height: auto;">
 	        </section>
-		<section>
+		<section data-background="#f3e5f5">
 		    <h2>Successive Approximation ADC</h2>
 			<img src="images/sar_adc.png"
                              alt="Successive Approximation ADC Block Diagram"
-                             style="max-width: suto; height: auto;">
+                             style="max-width: auto; height: auto;">
                 </section>
-		<section>
+		<section data-background="#f3e5f5">
 		    <h2>Sigma-Delta ADC</h2>
 			<img src="images/sigma_delta_adc.png"
                              alt="Sigma-Delta ADC Block Diagram"
                              style="max-width: 90%; height: auto;">
 		</section>
-		<section>
+		<section data-background="#f3e5f5">
 		    <h2>Pipeline ADC</h2>
 			<img src="images/pipeline_adc.png"
 			     alt="Pipeline ADC Block Diagra,"
@@ -149,11 +169,20 @@
             </section>
 
 	    <section>
-		<h2>Applications of ADCs</h2>
-	    </section>
-
-	    <section>
 		<h2>Recaption</h2>
+	    </section>
+	    <section>
+	        <ul class="no-bullets">
+	            <p class="fragment">🔹 <strong>What is an ADC?</strong> – Converts analog signals to digital.</p>
+       		    <p class="fragment">🔹 <strong>Why do we need ADCs?</strong> – Digital systems require discrete data.</p>
+      	 	    <p class="fragment">🔹 <strong>Key Parameters:</strong>
+			<ul class="no bullets">
+                	    <p class="fragment">📏 <strong>Resolution (bit depth)</strong> – Determines precision (e.g., 8-bit, 12-bit).</p>
+			    <p class="fragment">⏱️ <strong>Sampling Rate</strong> – How often signals are measured per second.</p>
+                            <p class="fragment">⚡ <strong>Voltage Range</strong> – Minimum and maximum values measurable.</p>
+                            <p class="fragment">❗ <strong>Quantization Error & Noise</strong> – Accuracy limitations.</p>
+                        </ul>
+	       </ul>
 	    </section>
 
         </div>
