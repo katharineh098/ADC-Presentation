@@ -18,6 +18,13 @@
 	    padding-left: 0; 
 	    color: #ff9900;
         }
+    	.columns {
+      	    display: flex;
+    	}
+    	.column {
+      	    flex: 1;
+      	    padding: 10px;
+    	}
     </style>
 </head>
 <body>
@@ -34,18 +41,18 @@
             <!-- Horizontal Navigation Example -->
             <section>
                 <section>
-                    <h2>What is an ADC?</h2>
+                    <h2>defination of ADC</h2>
                     <p>A system that converts an analog signal into a digital signal.</p>
                 </section>
                 <section>
-                    <h2>Where are ADCs used?</h2>
+                    <h2>The Use Cases of ADCs</h2>
+		    <p>Any application where it is necessary to convert analog signals into digital represe    ntation.</p>
                     <ol>
-                        <li class="fragment">Microcontrollers</li>
-                        <li class="fragment">Audio Processing</li>
-                        <li class="fragment">Sensors</li>
-			<li class="fragment">...</li>
+                        <li>Microcontrollers</li>
+                        <li>Audio Processing</li>
+                        <li>Sensors</li>
+			<li>...</li>
                     </ol>
-		    <p class="fragment">Any application where it is necessary to convert analog signals into digital form.</p>
                 </section>
             </section>
 
@@ -53,9 +60,9 @@
 		<section>
     	       	    <h2>ADC Process</h2>
                     <ol>
-                        <li class="fragment">Sampling</li>
-                        <li class="fragment">Quantization</li>
-                        <li class="fragment">Encoding</li>
+                        <li>Sampling</li>
+                        <li>Quantization</li>
+                        <li>Encoding</li>
                     </ol>
                 </section>
 	        <section>
@@ -69,14 +76,14 @@
                 <section id="sampling-theorem">
                     <h2>Sampling Theorem</h2>
                     <p>"To reconstruct a signal, the sampling rate must be at least twice the highest frequency component."</p>
-                </section>
                     <!-- LaTeX Formula -->
                     <section>
-                       <h2>Nyquist-Shannon Theorem</h2>
+                       <h3>Nyquist-Shannon Theorem</h3>
                        <p>\[
                        f_s \geq 2 f_{max}
                        \]</p>
                     </section>
+		</section>
 		<section>
 		    <h3>Quantization</h3>
 		    <p>the process of mapping continuous infinite values to a smaller set of decrete finite values</p>
@@ -88,9 +95,7 @@
 		    <p>the process of representing the digital output of the ADC as a binary number</p>
 		    <h4 style="text-align: left;">Resolution</h4>
 		    <p>the number of distinct digital values that can be used to represent the input signal</p>
-		</section>
-		<section>
-		    <h3>A description of how the sequence was sampled and encoded is also needed.</h3>
+		    <>A description of how the sequence was sampled and encoded is also needed.</p>
 		</section>
 	    </section>
 
@@ -102,28 +107,28 @@
                 </section>
                 <section>
                     <h3>Flash ADC</h3>
-                    <p class="fragment">Fast but expensive</p>
-		    <p class="fragment">Can convert very high frequencies of input signals</p>
-		    <p class="fragment">Consume more power than other ADCs and they are limited to low resolutions, typically up to 8 bits</p>
+                    <p>Utilizing multiple comparators in parallel, fast but expensive</p>
+		    <p>Can convert very high frequencies of input signals</p>
+		    <p>Consume more power than other ADCs and they are limited to low resolutions, typically up to 8 bits</p>
                 </section>
                 <section>
                     <h3>Successive Approximation ADC</h3>
-                    <p class="fragment">Efficient and commonly used</p>
-		    <p class="fragment">Dominate the medium to high-resolution ADC market</p>
-		    <p class="fragment">Sampling rates of up to 25Msps and resolutions ranging from 8 to 18 bits</p>
+                    <p>Efficient and commonly used</p>
+		    <p>Dominate the medium to high-resolution ADC market</p>
+		    <p>Sampling rates of up to 25Msps and resolutions ranging from 8 to 18 bits</p>
                 </section>
                 <section>
                     <h3>Sigma-Delta ADC</h3>
-                    <p class="fragment">High resolution, used in audio applications</p>
-		    <p class="fragment">A closed-loop oversampling technique</p>
-		    <p class="fragment">Designed to sample a slowly varying input signal multiple times, a process known as oversampling.</p>
-		    <p class="fragment">Δ: the difference between the incoming analog signal and the DAC output</p>
-		    <p class="fragment">Σ: the accumulation of this error over time</p>
+                    <p>High resolution, used in audio applications</p>
+		    <p>A closed-loop oversampling technique</p>
+		    <p>Designed to sample a slowly varying input signal multiple times, a process known as oversampling.</p>
+		    <p>Δ: the difference between the incoming analog signal and the DAC output</p>
+		    <p>Σ: the accumulation of this error over time</p>
                 </section>
 		<section>
 		    <h3>Pipeline ADC</h3>
-		    <p class="fragment">High-speed and efficient, used in video and RF applications</p>
-		    <p class="fragment">Dividing the conversion process into multiple stages, each of which contributes a portion of the final digital output. </p>
+		    <p>High-speed and efficient, used in video and RF applications</p>
+		    <p>Dividing the conversion process into multiple stages, each of which contributes a portion of the final digital output. </p>
 		</section>
             </section>
 
@@ -169,20 +174,39 @@
             </section>
 
 	    <section>
-		<h2>Recaption</h2>
+		<h2>Summary</h2>
 	    </section>
 	    <section>
 	        <ul class="no-bullets">
-	            <p class="fragment">🔹 <strong>What is an ADC?</strong> – Converts analog signals to digital.</p>
-       		    <p class="fragment">🔹 <strong>Why do we need ADCs?</strong> – Digital systems require discrete data.</p>
-      	 	    <p class="fragment">🔹 <strong>Key Parameters:</strong>
+	            <p>🔹 <strong>What is an ADC?</strong> – Converts analog signals to digital.</p>
+       		    <p>🔹 <strong>Why do we need ADCs?</strong> – Digital systems require discrete data.</p>
+      	 	    <p>🔹 <strong>Key Parameters:</strong>
 			<ul class="no bullets">
-                	    <p class="fragment">📏 <strong>Resolution (bit depth)</strong> – Determines precision (e.g., 8-bit, 12-bit).</p>
-			    <p class="fragment">⏱️ <strong>Sampling Rate</strong> – How often signals are measured per second.</p>
-                            <p class="fragment">⚡ <strong>Voltage Range</strong> – Minimum and maximum values measurable.</p>
-                            <p class="fragment">❗ <strong>Quantization Error & Noise</strong> – Accuracy limitations.</p>
+                	    <p>📏 <strong>Resolution (bit depth)</strong> – Determines precision (e.g., 8-bit, 12-bit).</p>
+			    <p>⏱️ <strong>Sampling Rate</strong> – How often signals are measured per second.</p>
+                            <p>⚡ <strong>Voltage Range</strong> – Minimum and maximum values measurable.</p>
+                            <p>❗ <strong>Quantization Error & Noise</strong> – Accuracy limitations.</p>
                         </ul>
 	       </ul>
+	    </section>
+
+	    <section>
+	    	<div class="columns">
+    		    <!-- Left: Image -->
+    		    <div class="column">
+        	        <img src="images/1.jpeg" alt="Meihui Huang" style="width: 100%; border-radius: 10px;">
+    		    </div>
+
+   		     <!-- Right: Contact Info -->
+   		     <div class="col">
+        	        <h3>CONTACT INFORMATION</h3>
+        	        <p><strong>Name:</strong> Meihui Huang</p>
+        	        <p><strong>Email:</strong> meihui.huang@gruppe.ai</p>
+        	        <p><strong>Location:</strong> Bochum, Germany</p>
+        	        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/meihui-huang;">meihui-huang</a></p>
+        	        <p><strong>GitHub:</strong> <a href="https://github.com/katharineh098;">katharineh098</a></p>
+    		    </div>
+		</div>
 	    </section>
 
         </div>
